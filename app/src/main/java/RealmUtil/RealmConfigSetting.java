@@ -22,7 +22,7 @@ public class RealmConfigSetting extends Application{
 	
 	public void RealmConfigSetting() {
 
-		RealmConfiguration realmConfiguration = new RealmConfiguration.Builder(Environment.getExternalStorageDirectory())
+		RealmConfiguration realmConfiguration = new RealmConfiguration.Builder(this.context)
 				.name("tablet-sale.realm")
 				.schemaVersion(9)
 				.deleteRealmIfMigrationNeeded()
